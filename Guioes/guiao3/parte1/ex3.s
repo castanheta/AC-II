@@ -1,4 +1,4 @@
-.equ ADDR_BASE_HI,0xBF88 # Base address: 16 MSbits
+	.equ ADDR_BASE_HI,0xBF88 # Base address: 16 MSbits
 	.equ TRISE,0x6100 # TRISE address is 0xBF886100
 	.equ TRISD,0x60C0
 	.equ TRISB,0x6040

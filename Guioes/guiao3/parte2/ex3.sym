@@ -1,0 +1,20 @@
+GAS LISTING ex3.s 			page 1
+
+
+DEFINED SYMBOLS
+               ex3.s:1      *ABS*:000000000000bf88 ADDR_BASE_HI
+               ex3.s:2      *ABS*:0000000000006100 TRISE
+               ex3.s:3      *ABS*:0000000000006040 TRISB
+               ex3.s:4      *ABS*:0000000000006120 LATE
+               ex3.s:5      *ABS*:0000000000006050 PORTB
+               ex3.s:6      *ABS*:000000000000000c RESET_CORE_TIMER
+               ex3.s:7      *ABS*:000000000000000b READ_CORE_TIMER
+               ex3.s:12     .text:0000000000000000 main
+               ex3.s:26     .text:000000000000002c loop
+               ex3.s:53     .text:0000000000000088 delay
+               ex3.s:38     .text:0000000000000054 if
+               ex3.s:41     .text:0000000000000068 else
+               ex3.s:43     .text:000000000000006c endif
+               ex3.s:58     .text:00000000000000a0 while2
+
+NO UNDEFINED SYMBOLS
