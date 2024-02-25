@@ -1,0 +1,23 @@
+GAS LISTING ex3.s 			page 1
+
+
+DEFINED SYMBOLS
+               ex3.s:1      *ABS*:000000000000000c RESET_CORE_TIMER
+               ex3.s:2      *ABS*:000000000000000b READ_CORE_TIMER
+               ex3.s:3      *ABS*:0000000000000003 putChar
+               ex3.s:4      *ABS*:0000000000000006 printInt
+               ex3.s:5      *ABS*:0000000000000001 IN_KEY
+               ex3.s:10     .text:0000000000000000 main
+               ex3.s:21     .text:0000000000000028 while
+               ex3.s:24     .text:0000000000000030 if3
+               ex3.s:26     .text:0000000000000040 endif3
+               ex3.s:27     .text:0000000000000040 if4
+               ex3.s:29     .text:0000000000000050 endif4
+               ex3.s:78     .text:0000000000000114 delay
+               ex3.s:41     .text:000000000000007c if
+               ex3.s:44     .text:0000000000000094 endif
+               ex3.s:46     .text:0000000000000094 if2
+               ex3.s:49     .text:00000000000000ac endif2
+               ex3.s:83     .text:000000000000012c while2
+
+NO UNDEFINED SYMBOLS
