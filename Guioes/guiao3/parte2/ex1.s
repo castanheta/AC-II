@@ -5,6 +5,8 @@
         .equ PORTB,0x6050
         .equ RESET_CORE_TIMER,12
         .equ READ_CORE_TIMER,11
+        .equ    PRINT_INT, 6
+        .equ    PUT_CHAR,3
 
         .data   
         .text
@@ -29,6 +31,15 @@ loop:
 
         li      $a0,1000
         jal     delay
+
+        li      $v0,PRINT_INT
+        move    $a0,$t2
+        la      $a1,0x0005000F
+        syscall
+
+        li      $v0,PUT_CHAR
+        li      $a0,'\r'
+        syscall
 
         addi    $t2,$t2,1
         andi    $t2,$t2,0x000F       # e.g. up counter MOD 16 
