@@ -1,0 +1,22 @@
+GAS LISTING ex6.s 			page 1
+
+
+DEFINED SYMBOLS
+               ex6.s:1      *ABS*:000000000000000c RESET_CORE_TIMER
+               ex6.s:2      *ABS*:000000000000000b READ_CORE_TIMER
+               ex6.s:3      *ABS*:000000000000bf88 SFR_BASE_HI
+               ex6.s:4      *ABS*:0000000000006100 TRISE
+               ex6.s:5      *ABS*:0000000000006110 PORTE
+               ex6.s:6      *ABS*:0000000000006120 LATE
+               ex6.s:7      *ABS*:0000000000006040 TRISB
+               ex6.s:8      *ABS*:0000000000006050 PORTB
+               ex6.s:9      *ABS*:0000000000000006 PRINT_INT
+               ex6.s:10     *ABS*:0000000000000003 PUT_CHAR
+               ex6.s:14     .text:0000000000000000 main
+               ex6.s:27     .text:0000000000000024 loop
+               ex6.s:56     .text:0000000000000074 delay
+               ex6.s:59     .text:0000000000000078 for
+               ex6.s:67     .text:00000000000000a4 endfor
+               ex6.s:62     .text:0000000000000088 read
+
+NO UNDEFINED SYMBOLS

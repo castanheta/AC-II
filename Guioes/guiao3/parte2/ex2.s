@@ -26,9 +26,6 @@ loop:
         or      $t1,$t1,$t3         # Merge counter w/ LATE value
         sw      $t1,LATE($s0)       # Update LATE register
 
-        li      $v0,RESET_CORE_TIMER
-                syscall
-
         li      $a0,1000
         jal     delay
 

@@ -32,8 +32,8 @@ loop:                                   #       while(1) {
        
        lw      $t1, LATE($s0)          #               $t1 = [LATE];
         andi    $t1, $t1, 0xFFE1        #               RE[3..0] = 0;
-        sll     $s1,$s1,1
-        or      $t1, $s1, $t1           #               RE[3..0] = count;
+        sll     $t3,$s1,1
+        or      $t1, $t1, $t3           #               RE[3..0] = count;
         sw      $t1, LATE($s0)          #               WRITE LATE Register;
         li      $a0, 333                #
         jal     delay                   #               delay(333);
@@ -44,8 +44,8 @@ loop:                                   #       while(1) {
         li      $a0,' '
         syscall
         
-        andi    $s1, $s1, 0x001E        #                       count &= 0x000F
-if_last:bne     $s1, 0x0011, end            #                       if(count == 0) {
+        andi    $s1, $s1, 0x000F        #                       count &= 0x000F
+if_last:bne     $s1, 0x0010, end            #                       if(count == 0) {
         srl      $s1, $s1,2                 #                               count = 1;
 end:                                    #                       }
                  #               }
